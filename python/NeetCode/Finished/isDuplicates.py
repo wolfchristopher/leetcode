@@ -82,7 +82,7 @@ class BruteSolution:
 
 
 
-# Other solutions are Sorting, Hash Set and Hash Set Length
+# Other solutions are Sorting, Hash HashSet and Hash HashSet Length
 # Need to learn those other methods.
 
 class SortingSolution:

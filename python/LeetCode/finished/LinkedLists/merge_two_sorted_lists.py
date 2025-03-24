@@ -57,5 +57,5 @@ def mergeTwoLists(list1: Optional[ListNode], list2: Optional[ListNode]) -> Optio
     elif list2: # Check list2 for something in it.
         tail.next = list2 #Point the remainder of list2 to the tail.
 
-    return dummy.next # Return the new merged and sorted linked list.
+    return dummy # Return the new merged and sorted linked list.
 

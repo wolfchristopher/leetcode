@@ -25,8 +25,8 @@
 /*
 MY NOTES:
     It ia easy to check for duplicates of an array by putting the items of the 
-    array in a Set. You first check if the value is in the set already and if
-    it is not in the Set add it into the set, if it checks and sees that the
+    array in a HashSet. You first check if the value is in the set already and if
+    it is not in the HashSet add it into the set, if it checks and sees that the
     value is already in the set the return true. If it goes through the entire
     array with no duplicates return false.
 

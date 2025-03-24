@@ -1,5 +1,5 @@
 // var groupAnagrams = function (strs) {
-//   const seenValues = new Set();
+//   const seenValues = new HashSet();
 //   let arr = [];
 //   for (let [index, letter] of strs.entries()) { //O(n)
 //     let sortedWord = letter.split("").sort().join("");

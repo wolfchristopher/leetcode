@@ -35,3 +35,8 @@ class Solution:
                 current = current.next
 
         return head
+
+# Convert Binary Number in a Linked List to Integer (LC 1290)
+#
+# Traverse the linked list and compute the binary number as an integer using bitwise operations.
+# Odd Even Linked List (LC 328)
