@@ -75,8 +75,8 @@ def numberToWords(num: int) -> str:
                 return ""
             elif n < 20:
                 return below_20[n]
-            elif n < 100:
-                return tens[n // 10] + " " + helper(n % 10) if n % 10 != 0 else tens[n // 10]
+            elif n < 100: # Checks if number is less than 100
+                return tens[n // 10] + " " + helper(n % 10) if n % 10 != 0 else tens[n // 10] # n // 20 performs integer division to extract the tens digit.n % 10 calculates the remainder when n is divided by 10, which gives the "ones". the conditional if n % 10 != 0 else tens[n // 10] is the part that handles the condition where there is a unit digit
             else:
                 return below_20[n // 100] + " Hundred " + helper(n % 100) if n % 100 != 0 else below_20[
                                                                                                    n // 100] + " Hundred"
@@ -87,7 +87,7 @@ def numberToWords(num: int) -> str:
                 res = helper(num % 1000) + " " + thousands[i] + " " + res
             num //= 1000
 
-        return res.strip()
+        return res.strip() # Removes whitespace
 
 numberToWords(123) # "One Hundred Twenty Three"
 numberToWords(12345) # "Twelve Thousand Three Hundred Forty Five
